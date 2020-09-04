@@ -66,3 +66,10 @@ steps:
 - task: SonarCloudPublish@1
   inputs:
     pollingTimeoutSec: '300'    
+
+- task: BuildQualityChecks@6
+  inputs:
+    checkCoverage: true
+    coverageFailOption: 'fixed'
+    coverageType: 'lines'
+    coverageThreshold: '20'    
