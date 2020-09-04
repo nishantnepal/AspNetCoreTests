@@ -68,5 +68,16 @@ namespace AspNetCoreTests.Web.Controllers
 
             return View();
         }
+
+        [HttpGet("demo")]
+        public IActionResult Demo(int? id)
+        {
+            if (id == null)
+            {
+                return BadRequest();
+            }
+
+            return Ok();
+        }
     }
 }
