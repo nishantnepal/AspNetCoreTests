@@ -67,7 +67,7 @@ steps:
   inputs:
     pollingTimeoutSec: '300'    
 
-- task: BuildQualityChecks@6
+- task: BuildQualityChecks@7
   inputs:
     checkCoverage: true
     coverageFailOption: 'fixed'
